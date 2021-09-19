@@ -1,0 +1,144 @@
+//- =================== GOOGLE FONTS ======================
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+// =================== VARIABLES CSS ====================== //
+
+$header-height: 3rem;
+
+$hue-color: rgba(0, 0, 0, 0.3);
+$black-color: rgba(0, 0, 0, 0.3);
+$black-color-alt: rgba(0, 0, 0, 0.5);
+$title-color: rgba(0, 0, 0, 0.3);
+$text-color: rgba(0, 0, 0, 0.5);
+$text-color-light: rgba(0, 0, 0, 0.3);
+$white-color: #fff;
+$body-color: rgba(0, 0, 0, 0.3);
+$container-color: rgba(0, 0, 0, 0.3);
+$text-gradient: rgba(0, 0, 0, 0.3);
+$scroll-thumb-color: rgba(0, 0, 0, 0.3);
+$scroll-thumb-color-alt: rgba(0, 0, 0, 0.3);
+
+// =================== FONTS CSS ====================== //
+
+$body-font: 'Poppins', sans-serif;
+$biggest-font-size: 5rem;
+$bigger-font-size: 3.5rem;
+$big-font-size: 2rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+$text-line-height: 2rem;
+
+// =================== FONTS WEIGHT ====================== //
+
+$font-medium: 500;
+$font-semi-bold: 600;
+
+// =================== Margenes Bottom ====================== //
+
+$mb-0-5: .5rem;
+$mb-0-75: .75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+
+// =================== z-index ====================== //
+
+$z-tooltop: 10;
+$z-fixed: 100;
+
+// =================== RESPONSIVE TYPOGRAPHY ====================== //
+
+@media screen and (min-width: 968px) {
+    $biggest-font-size: 7.5rem;
+    $bigger-font-size: 4.5rem;
+    $big-font-size: 4rem;
+    $h2-font-size: 1.5rem;
+    $h2-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $smaller-font-size: .813rem;
+}
+
+// =================== BASE ====================== //
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: $header-height 0 0 0;
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    background-color: $body-color;
+    color: $text-color;
+}
+
+h1, h2, h3 {
+    color: $title-color;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// =================== REUSABLE CSS CLASSES ====================== //
+
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section__title {
+    font-size: $bigger-font-size;
+    text-align: center;
+    margin-bottom: $mb-2-5;
+}
+
+.section__title__gradient {
+    background: $text-gradient;
+    color: transparent;
+    background-clip: text;
+}
+
+// =================== LAYOUT ====================== //
+
+.main {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 968px;
+    margin: 0 $mb-1-5;
+}
+
+.grid {
+    display: grid;
+}

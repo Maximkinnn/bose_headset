@@ -1,0 +1,180 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/build/css/modern-normalize.min.css")
+        link(rel="stylesheet", href="/build/css/style.min.css")
+        title Document
+
+        //- =================== REMIX ICON ======================
+        link(rel="shortcut icon", href="/dev/img/favicon.png", type="image/x-icon")
+
+        //- =================== REMIX ICON ======================
+        link(href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet")
+
+
+    body 
+        header.header#header 
+            nav.nav.container 
+                a(href="#").nav__logo
+                    img(src="/dev/img/logo.png", alt="logo") 
+                .nav__menu#nav-menu
+                    ul.nav__list 
+                        li.nav__item 
+                            a(class="active-link nav__link" href="#home") Home
+                        li.nav__item 
+                            a(class="nav__link" href="#specs") Specs
+                        li.nav__item 
+                            a(class="nav__link" href="#case") Case
+                        li.nav__item 
+                            a(class="nav__link" href="#products") Products
+                    .nav__close#nav-close
+                        <i class="ri-close-line"></i>
+                .nav__toggle#nav-toggle
+                    <i class="ri-menu-3-line"></i>
+        main.main 
+            //- =================== HOME ======================
+            section.home.section#home 
+                .home__container.container.grid
+                    .div
+                        img(class="home__img" src="/dev/img/home.png", alt="headset")
+                    .home__data 
+                        .home__header
+                            h1.home__title On ear
+                            h2.home__subtitle Beats 3
+                        .home__footer
+                            h3.home__title-description Overview
+                            p.home__description Enjoy award-winning Beats sound with listening freedom and a sleek, streaming design with comfortable padded earphones, delivering first-rate playback.
+                            a(href="#").button.button--flex
+                                span.button--flex <i class="ri-shopping-bag-line button__icon"></i> Add to Bag
+                                span.home__price $299
+            //- =================== SPONSOR ======================
+            section.sponsor.section 
+                .sponsor__container.container.grid 
+                    img(class="sponsor__img" src="/dev/img/sponsor1.png" alt="sponsor")
+                    img(class="sponsor__img" src="/dev/img/sponsor2.png" alt="sponsor")
+                    img(class="sponsor__img" src="/dev/img/sponsor3.png" alt="sponsor")
+                    img(class="sponsor__img" src="/dev/img/sponsor4.png" alt="sponsor")
+            section.specs.section.grid#specs 
+                h2.section__title.section__title-gradient Specs
+                .specs__container.container.grid 
+                    .specs__content.grid 
+                        .specs__data 
+                            <i class="ri-bluetooth-line specs__icon"></i>
+                            h3.specs__title Connection 
+                            span.specs__subtitles Bluetooth v5.2 
+                        .specs__data 
+                            <i class="ri-battery-charge-line specs__icon"></i>
+                            h3.specs__title Battery
+                            span.specs__subtitles Duration 40h
+                        .specs__data 
+                            <i class="ri-plug-line specs__icon"></i>
+                            h3.specs__title Load
+                            span.specs__subtitles Fast charge 4.2-AAC 
+                        .specs__data 
+                            <i class="ri-mic-line specs__icon"></i>
+                            h3.specs__title Microphone
+                            span.specs__subtitles Supports Apple Siri <br> and Google
+                    .div
+                        img(class="specs__img" src="/dev/img/specs.png", alt="specs")
+            section.specs.section.grid#case 
+                h2.section__title.section__title-gradient Case
+                .case__container.container.grid 
+                    .div 
+                        img(class="case__img" src="/dev/img/case.png", alt="case")
+                    .case__data
+                        p.case__description With a comfortable and adaptable case so that you can store it whenever you want , and keep your durability forever.
+                        a.button.button--flex(href="#") <i class="ri-information-line button__icon"></i> More info
+            //- =================== DISCOUNT ======================
+            section.discaunt.section 
+                .discount__container.container.grid 
+                    .discount__animate 
+                        h2.discount__title Immese yourself if <br> your music
+                        p.discount__description Get it now , up to 50% off.
+                        a.button.button--flex <i class="ri-shopping-bag-line button__icon"></i> Shop Now
+                    img(class="discount__img" src="/dev/img/discount.png", alt="discount")
+            //- =================== PRODUCTS ======================
+            section.products.section#products
+                h2.section__title.section__title-gradient.products__line Choose <br> Your Style
+                .products__container.container.grid 
+                    article.products__card 
+                        .products__content 
+                            img(class="products__img" src="/dev/img/product1.png", alt="products")
+                            h3.products__title Black 
+                            span.products__price $249
+                            button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
+                    article.products__card 
+                        .products__content 
+                            img(class="products__img" src="/dev/img/product2.png", alt="products")
+                            h3.products__title Red Black
+                            span.products__price $249
+                            button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
+                    article.products__card 
+                        .products__content 
+                            img(class="products__img" src="/dev/img/product3.png", alt="products")
+                            h3.products__title Night Black 
+                            span.products__price $249
+                            button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
+                    article.products__card 
+                        .products__content 
+                            img(class="products__img" src="/dev/img/product4.png", alt="products")
+                            h3.products__title Blue 
+                            span.products__price $249
+                            button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
+                    article.products__card 
+                        .products__content 
+                            img(class="products__img" src="/dev/img/product5.png", alt="products")
+                            h3.products__title Twilight gray
+                            span.products__price $249
+                            button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
+            //- =================== FOOTER ======================
+            footer.footer.section 
+                .footer__container.container.grid
+                    a(class="footer__logo" href="#")
+                        img(src="/dev/img/logo.png", alt="logo")
+                    .footer__content 
+                        h3.footer__title Products 
+                        ul.footer__links 
+                            li
+                                a(class="footer__link" href="#") Headphones
+                            li
+                                a(class="footer__link" href="#") Earphones 
+                            li
+                                a(class="footer__link" href="#") Earbuds
+                            li
+                                a(class="footer__link" href="#") Accesories 
+                    .footer__content 
+                        h3.footer__title Support
+                        ul.footer__links 
+                            li
+                                a(class="footer__link" href="#") Product help
+                            li
+                                a(class="footer__link" href="#") Register 
+                            li
+                                a(class="footer__link" href="#") Updates
+                            li
+                                a(class="footer__link" href="#") Provides 
+                    .footer__content 
+                        form(class="footer__form" action="") 
+                            input(class="footer__input" placeholder="Email" type="email")
+                            button.button.button--flex
+                                <i class="ri-mail-send-line button__icon"> Subscribe </i> 
+                        .footer__social
+                            a(class="footer__social-link" target="_blank" href="https://www.facebook.com/") <i class="ri-facebook-fill"></i>
+                            a(class="footer__social-link" target="_blank" href="https://www.instagram.com/") <i class="ri-instagram-line"></i>
+                            a(class="footer__social-link" target="_blank" href="https://www.twitter.com/") <i class="ri-twitter-line"></i>
+                p.footer__copy 
+                    a(class="footer__copy-link" target="_blank" href="https://www.youtube.com/") &#169; Bose. All right reserved.
+
+            //- =================== SCROLL UP ======================
+            a(href="#" class="scrollup" id="scroll-up") <i class="ri-arrow-up-s-line scrollup__icon"></i>
+
+        //- ===================  SCROLL REVEAL ======================
+
+        script(defer src="/dev/js/scrollreveal.min.js")
+
+        //- =================== VANILA JS ======================
+
+        script(defer src="/build/js/script.min.js")
