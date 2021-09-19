@@ -6,7 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="/build/css/modern-normalize.min.css")
         link(rel="stylesheet", href="/build/css/style.min.css")
-        title Document
+        title Sony
 
         //- =================== REMIX ICON ======================
         link(rel="shortcut icon", href="/dev/img/favicon.png", type="image/x-icon")
@@ -18,18 +18,18 @@ html(lang="en")
     body 
         header.header#header 
             nav.nav.container 
-                a(href="#").nav__logo
-                    img(src="/dev/img/logo.png", alt="logo") 
+                a(class="nav__logo" href="#")
+                    img(src="/dev/img/sony_logo.png", alt="logo") 
                 .nav__menu#nav-menu
                     ul.nav__list 
                         li.nav__item 
-                            a(class="active-link nav__link" href="#home") Home
+                            a(class="active-link nav__link" href="#home") Главная
                         li.nav__item 
-                            a(class="nav__link" href="#specs") Specs
+                            a(class="nav__link" href="#specs") Характеристики
                         li.nav__item 
-                            a(class="nav__link" href="#case") Case
+                            a(class="nav__link" href="#case") Чехол
                         li.nav__item 
-                            a(class="nav__link" href="#products") Products
+                            a(class="nav__link" href="#products") Продукты
                     .nav__close#nav-close
                         <i class="ri-close-line"></i>
                 .nav__toggle#nav-toggle
@@ -39,137 +39,145 @@ html(lang="en")
             section.home.section#home 
                 .home__container.container.grid
                     .div
-                        img(class="home__img" src="/dev/img/home.png", alt="headset")
+                        img(class="home__img" src="/dev/img/sony_home.png", alt="headset")
                     .home__data 
                         .home__header
-                            h1.home__title On ear
-                            h2.home__subtitle Beats 3
+                            h1.home__title Лучшие
+                            h2.home__subtitle Sony WH-1000XM4
                         .home__footer
-                            h3.home__title-description Overview
-                            p.home__description Enjoy award-winning Beats sound with listening freedom and a sleek, streaming design with comfortable padded earphones, delivering first-rate playback.
+                            h3.home__title-description Описание
+                            p.home__description Наслаждайтесь отмеченным наградами звуком Beats со свободой прослушивания и элегантным дизайном для потоковой передачи с удобными наушниками с мягкой подкладкой, обеспечивающими первоклассное воспроизведение.
                             a(href="#").button.button--flex
-                                span.button--flex <i class="ri-shopping-bag-line button__icon"></i> Add to Bag
+                                span.button--flex <i class="ri-shopping-bag-line button__icon"></i> Добавить в корзину
                                 span.home__price $299
             //- =================== SPONSOR ======================
             section.sponsor.section 
                 .sponsor__container.container.grid 
-                    img(class="sponsor__img" src="/dev/img/sponsor1.png" alt="sponsor")
                     img(class="sponsor__img" src="/dev/img/sponsor2.png" alt="sponsor")
-                    img(class="sponsor__img" src="/dev/img/sponsor3.png" alt="sponsor")
+                    img(class="sponsor__img" src="/dev/img/sponsor1.png" alt="sponsor")
                     img(class="sponsor__img" src="/dev/img/sponsor4.png" alt="sponsor")
+                    img(class="sponsor__img" src="/dev/img/sponsor3.png" alt="sponsor")
             section.specs.section.grid#specs 
-                h2.section__title.section__title-gradient Specs
+                h2.section__title.section__title-gradient Характеристики
                 .specs__container.container.grid 
                     .specs__content.grid 
                         .specs__data 
                             <i class="ri-bluetooth-line specs__icon"></i>
-                            h3.specs__title Connection 
+                            h3.specs__title Соединение
                             span.specs__subtitles Bluetooth v5.2 
                         .specs__data 
                             <i class="ri-battery-charge-line specs__icon"></i>
-                            h3.specs__title Battery
-                            span.specs__subtitles Duration 40h
+                            h3.specs__title Батарея
+                            span.specs__subtitles Держит 40 часов
                         .specs__data 
                             <i class="ri-plug-line specs__icon"></i>
-                            h3.specs__title Load
-                            span.specs__subtitles Fast charge 4.2-AAC 
+                            h3.specs__title Заряд
+                            span.specs__subtitles Быстрая Зарядка 4.2-AAC 
                         .specs__data 
                             <i class="ri-mic-line specs__icon"></i>
-                            h3.specs__title Microphone
-                            span.specs__subtitles Supports Apple Siri <br> and Google
+                            h3.specs__title Микрофон
+                            span.specs__subtitles Поддерживает Apple Siri <br> И Google
                     .div
-                        img(class="specs__img" src="/dev/img/specs.png", alt="specs")
+                        img(class="specs__img" src="/dev/img/sony_specs.png", alt="specs")
             section.specs.section.grid#case 
-                h2.section__title.section__title-gradient Case
+                h2.section__title.section__title-gradient Чехол
                 .case__container.container.grid 
                     .div 
-                        img(class="case__img" src="/dev/img/case.png", alt="case")
+                        img(class="case__img" src="/dev/img/sony_case.png", alt="case")
                     .case__data
-                        p.case__description With a comfortable and adaptable case so that you can store it whenever you want , and keep your durability forever.
-                        a.button.button--flex(href="#") <i class="ri-information-line button__icon"></i> More info
+                        p.case__description В удобном и адаптируемом футляре, чтобы вы могли хранить его, когда захотите, и сохраните свою долговечность навсегда.
+                        a.button.button--flex(href="#") <i class="ri-information-line button__icon"></i> Больше информации
             //- =================== DISCOUNT ======================
             section.discaunt.section 
                 .discount__container.container.grid 
                     .discount__animate 
-                        h2.discount__title Immese yourself if <br> your music
-                        p.discount__description Get it now , up to 50% off.
+                        h2.discount__title Погрузитесь, в невероятный <br> звук 
+                        p.discount__description Получите сейчас со <br>  скидкой до 50%.
                         a.button.button--flex <i class="ri-shopping-bag-line button__icon"></i> Shop Now
-                    img(class="discount__img" src="/dev/img/discount.png", alt="discount")
+                    img(class="discount__img" src="/dev/img/sony_discount.png", alt="discount")
             //- =================== PRODUCTS ======================
             section.products.section#products
-                h2.section__title.section__title-gradient.products__line Choose <br> Your Style
+                h2.section__title.section__title-gradient.products__line Выберите ваш <br> любимый цвет
                 .products__container.container.grid 
                     article.products__card 
                         .products__content 
-                            img(class="products__img" src="/dev/img/product1.png", alt="products")
-                            h3.products__title Black 
+                            img(class="products__img" src="/dev/img/sony_product_1.png", alt="products")
+                            h3.products__title Чёрный
                             span.products__price $249
                             button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
                     article.products__card 
                         .products__content 
-                            img(class="products__img" src="/dev/img/product2.png", alt="products")
-                            h3.products__title Red Black
+                            img(class="products__img" src="/dev/img/sony_product_6.png", alt="products")
+                            h3.products__title Голубой
                             span.products__price $249
                             button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
                     article.products__card 
                         .products__content 
-                            img(class="products__img" src="/dev/img/product3.png", alt="products")
-                            h3.products__title Night Black 
+                            img(class="products__img" src="/dev/img/sony_product_4.png", alt="products")
+                            h3.products__title Розовый
                             span.products__price $249
                             button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
                     article.products__card 
                         .products__content 
-                            img(class="products__img" src="/dev/img/product4.png", alt="products")
-                            h3.products__title Blue 
+                            img(class="products__img" src="/dev/img/sony_product_3.png", alt="products")
+                            h3.products__title Фиолетовый
                             span.products__price $249
                             button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
                     article.products__card 
                         .products__content 
-                            img(class="products__img" src="/dev/img/product5.png", alt="products")
-                            h3.products__title Twilight gray
+                            img(class="products__img" src="/dev/img/sony_product_5.png", alt="products")
+                            h3.products__title Золотой
+                            span.products__price $249
+                            button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
+                    article.products__card 
+                        .products__content 
+                            img(class="products__img" src="/dev/img/sony_product_2.png", alt="products")
+                            h3.products__title Белый
                             span.products__price $249
                             button.button.button--flex.products__button <i class="ri-shopping-bag-line"></i>
             //- =================== FOOTER ======================
             footer.footer.section 
                 .footer__container.container.grid
                     a(class="footer__logo" href="#")
-                        img(src="/dev/img/logo.png", alt="logo")
+                        img(src="/dev/img/sony_logo.png", alt="logo")
                     .footer__content 
-                        h3.footer__title Products 
+                        h3.footer__title Наши продукты
                         ul.footer__links 
                             li
-                                a(class="footer__link" href="#") Headphones
+                                a(class="footer__link" href="#") Полноразмерные наушники
                             li
-                                a(class="footer__link" href="#") Earphones 
+                                a(class="footer__link" href="#") Вкладыши 
                             li
-                                a(class="footer__link" href="#") Earbuds
+                                a(class="footer__link" href="#") Затычки
                             li
-                                a(class="footer__link" href="#") Accesories 
+                                a(class="footer__link" href="#") Аксессуары
                     .footer__content 
-                        h3.footer__title Support
+                        h3.footer__title Поддержка
                         ul.footer__links 
                             li
-                                a(class="footer__link" href="#") Product help
+                                a(class="footer__link" href="#") Помощь
                             li
-                                a(class="footer__link" href="#") Register 
+                                a(class="footer__link" href="#") Регистр 
                             li
-                                a(class="footer__link" href="#") Updates
+                                a(class="footer__link" href="#") Обновления
                             li
-                                a(class="footer__link" href="#") Provides 
+                                a(class="footer__link" href="#") Обеспечивания
                     .footer__content 
                         form(class="footer__form" action="") 
                             input(class="footer__input" placeholder="Email" type="email")
                             button.button.button--flex
-                                <i class="ri-mail-send-line button__icon"> Subscribe </i> 
+                                <i class="ri-mail-send-line button__icon"></i> Подпишитесь
                         .footer__social
                             a(class="footer__social-link" target="_blank" href="https://www.facebook.com/") <i class="ri-facebook-fill"></i>
                             a(class="footer__social-link" target="_blank" href="https://www.instagram.com/") <i class="ri-instagram-line"></i>
                             a(class="footer__social-link" target="_blank" href="https://www.twitter.com/") <i class="ri-twitter-line"></i>
                 p.footer__copy 
-                    a(class="footer__copy-link" target="_blank" href="https://www.youtube.com/") &#169; Bose. All right reserved.
+                    a(class="footer__copy-link" target="_blank" href="https://www.youtube.com/") &#169; Sony. Все права защищены.
 
             //- =================== SCROLL UP ======================
             a(href="#" class="scrollup" id="scroll-up") <i class="ri-arrow-up-s-line scrollup__icon"></i>
+
+        //- ===================  PRELOADER ======================
 
         //- ===================  SCROLL REVEAL ======================
 

@@ -1,4 +1,5 @@
 'use strict'
+
 // =================== SHOW MENU ====================== //
 
 const   navMenu = document.getElementById('nav-menu'),
@@ -77,6 +78,10 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+// =================== PRELOADER ====================== //
+
+
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 

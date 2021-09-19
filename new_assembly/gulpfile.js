@@ -46,9 +46,8 @@ const   gulp = require('gulp'),
                 sass = require('gulp-sass')(require('sass')),
                 imagemin = require('gulp-imagemin'),
             cssFiles = [
-'./dev/scss/header.scss',
-'./dev/scss/content.scss',
-'./dev/scss/footer.scss',
+'./dev/scss/style.scss',
+'./dev/scss/media.scss',
 './dev/scss/vars.scss'
 ],
             jsFiles = [
